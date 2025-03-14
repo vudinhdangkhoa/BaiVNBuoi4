@@ -16,6 +16,8 @@ void main() {
 }
 
 class menu extends StatelessWidget {
+  const menu({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -31,6 +33,8 @@ class menu extends StatelessWidget {
 
 // tạo 1 class menu kế thừa từ StatelessWidget trong đó có 5 button để chuyển đến các hướng dẫn
 class Menu extends StatelessWidget {
+  const Menu({super.key});
+
   // ✅ Đổi tên class theo chuẩn PascalCase
   @override
   Widget build(BuildContext context) {

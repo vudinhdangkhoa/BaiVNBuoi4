@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Bai5venha extends StatelessWidget {
-  const Bai5venha({Key? key}) : super(key: key);
+  const Bai5venha({super.key});
 
   @override
   Widget build(BuildContext context) {

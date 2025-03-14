@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 //tao 1 class anh kế thừa từ StatelessWidget
 class Bai2trenlop extends StatefulWidget {
-  const Bai2trenlop({Key? key}) : super(key: key);
+  const Bai2trenlop({super.key});
 
   @override
   _Bai2trenlopState createState() => _Bai2trenlopState();
 }
 
 class widget1 extends StatelessWidget {
-  const widget1({Key? key}) : super(key: key);
+  const widget1({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class widget1 extends StatelessWidget {
 }
 
 class widget2 extends StatelessWidget {
-  const widget2({Key? key}) : super(key: key);
+  const widget2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +69,7 @@ class widget2 extends StatelessWidget {
 }
 
 class widget3 extends StatelessWidget {
-  const widget3({Key? key}) : super(key: key);
+  const widget3({super.key});
 
   @override
   Widget build(BuildContext context) {

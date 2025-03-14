@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 
 //tạo class bai3trenlop kế thừ từ statelesswidget
 class bai3trenlop extends StatelessWidget {
+  const bai3trenlop({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

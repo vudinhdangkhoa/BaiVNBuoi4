@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 
 class bai1tl extends StatelessWidget {
+  const bai1tl({super.key});
+
   @override
   Widget build(BuildContext context) {
     return CalculatorHomePage();
@@ -9,6 +11,8 @@ class bai1tl extends StatelessWidget {
 }
 
 class CalculatorHomePage extends StatefulWidget {
+  const CalculatorHomePage({super.key});
+
   @override
   _CalculatorHomePageState createState() => _CalculatorHomePageState();
 }
@@ -135,11 +139,11 @@ class _CalculatorHomePageState extends State<CalculatorHomePage> {
           padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
+              decoration: BoxDecoration(color: Colors.blue),
               child: Text(
                 'Calculator',
                 style: TextStyle(color: Colors.white, fontSize: 24),
               ),
-              decoration: BoxDecoration(color: Colors.blue),
             ),
             ListTile(
               leading: Icon(Icons.calculate),
@@ -257,19 +261,19 @@ class _CalculatorHomePageState extends State<CalculatorHomePage> {
                 margin: EdgeInsets.all(1),
                 child: ElevatedButton(
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.resolveWith<Color>((
-                      Set<MaterialState> states,
+                    backgroundColor: WidgetStateProperty.resolveWith<Color>((
+                      Set<WidgetState> states,
                     ) {
                       if (value == '=') return Colors.blue;
                       return Colors.grey[200]!;
                     }),
-                    foregroundColor: MaterialStateProperty.resolveWith<Color>((
-                      Set<MaterialState> states,
+                    foregroundColor: WidgetStateProperty.resolveWith<Color>((
+                      Set<WidgetState> states,
                     ) {
                       if (value == '=') return Colors.white;
                       return Colors.black;
                     }),
-                    padding: MaterialStateProperty.all(EdgeInsets.all(24)),
+                    padding: WidgetStateProperty.all(EdgeInsets.all(24)),
                   ),
                   onPressed: () => onButtonPressed(value.toString()),
                   child: Text(value.toString(), style: TextStyle(fontSize: 24)),
