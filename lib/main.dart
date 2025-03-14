@@ -7,6 +7,9 @@ import 'huongdan2.dart';
 import 'bai2trenlop.dart';
 //import file bai3trenlop.dart
 import 'bai3trenlop.dart';
+import 'bai4venha.dart';
+import 'bai5venha.dart';
+import 'bai6venha.dart';
 
 void main() {
   runApp(menu());
@@ -86,6 +89,33 @@ class Menu extends StatelessWidget {
                   );
                 },
                 child: const Text('bai 3 trên lớp'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Bai4venha()),
+                  );
+                },
+                child: const Text('bai 4 về nhà'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Bai5venha()),
+                  );
+                },
+                child: const Text('bai 5 về nhà'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Bai6venha()),
+                  );
+                },
+                child: const Text('bai 6 về nhà'),
               ),
             ],
           ),
